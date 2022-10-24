@@ -1,0 +1,89 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn init
+
+PATH: 
+  /home/yckj/.local/bin:/home/yckj/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/yckj/bin/go_1.17.3/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.18.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:137150:13)
+      at Interface.emit (events.js:400:28)
+      at Interface._ttyWrite (readline.js:1001:16)
+      at ReadStream.onkeypress (readline.js:265:10)
+      at ReadStream.emit (events.js:400:28)
+      at emitKeys (internal/readline/utils.js:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1270:36)
+      at ReadStream.emit (events.js:400:28)
+      at addChunk (internal/streams/readable.js:293:12)
+
+npm manifest: 
+  {
+    "name": "felixfe",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build",
+      "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+      "axios": "^0.19.0",
+      "core-js": "^2.6.9",
+      "element-ui": "^2.8.2",
+      "js-base64": "2.5.1",
+      "jsnes": "^1.1.0",
+      "vue": "^2.6.10",
+      "vue-i18n": "^8.11.2",
+      "vue-router": "^3.0.1",
+      "vuex": "^3.1.1",
+      "xterm": "^3.8.0"
+    },
+    "devDependencies": {
+      "@vue/cli-plugin-babel": "^3.7.0",
+      "@vue/cli-plugin-eslint": "^3.7.0",
+      "@vue/cli-service": "^3.7.0",
+      "babel-eslint": "^10.0.1",
+      "eslint": "^6.0.1",
+      "eslint-plugin-vue": "^5.0.0",
+      "vue-template-compiler": "^2.5.21"
+    },
+    "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:vue/essential",
+        "eslint:recommended"
+      ],
+      "rules": {},
+      "parserOptions": {
+        "parser": "babel-eslint"
+      }
+    },
+    "postcss": {
+      "plugins": {
+        "autoprefixer": {}
+      }
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
