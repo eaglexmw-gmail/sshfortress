@@ -33,7 +33,7 @@ func AnyWebTerminal(c *gin.Context) {
 		return
 	}
 	//save your server from brute force password
-	if strings.Contains(sshAddr, "39.106.87.48") || strings.Contains(sshAddr, "127.0.0.1") || strings.Contains(sshAddr, "localhost") || strings.Contains(sshAddr, "::1") || strings.Contains(sshAddr, ".mojotv.cn") {
+	if /*strings.Contains(sshAddr, "39.106.87.48") ||*/ /*strings.Contains(sshAddr, "127.0.0.1") || */ strings.Contains(sshAddr, "localhost") /*|| strings.Contains(sshAddr, "::1")*/ /*|| strings.Contains(sshAddr, ".mojotv.cn")*/ {
 		logrus.WithField("ip", c.ClientIP()).Error("criminal criminal criminal, protect my own serve")
 		return
 	}

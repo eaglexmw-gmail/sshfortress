@@ -5,6 +5,8 @@ function resolve(dir) {
 
 module.exports = {
     outputDir: "./dist",
+    //base: process.env.BASE_URL,
+    publicPath: './',
     chainWebpack: config => {
         config.resolve.alias
           .set("@", resolve("src"))

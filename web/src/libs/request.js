@@ -10,12 +10,12 @@ const service = axios.create({
     headers: {
         'Content-Type': 'application/json;charset=UTF-8'
     },
-    baseURL: "/api/"
+    baseURL: "./api/"
     // 修改请求数据,去除data.q中为空的数据项,只针对post请求
 });
 
 service.interceptors.request.use(config => {
-    console.log("欢迎访问后端开发者和前端开发者的技术博客网站: https://mojotv.cn");
+    //console.log("欢迎访问后端开发者和前端开发者的技术博客网站: https://mojotv.cn");
     NProgress.start();
     //过滤 登陆请求
     if (config.url.includes('login') || config.url.includes('captcha') || config.url.includes('meta')) {
